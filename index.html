@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Recommendation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-image"></div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="bg1.png" alt="Logo">
+      <span class="HealthCare System">HealthCare System</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+  </nav>
+
+  <div class="image-slider">
+    <div class="slider">
+      <img src="scroll jpg/1.jpg" alt="Image 1">
+      <img src="scroll jpg/2.jpg" alt="Image 2">
+      <img src="scroll jpg/3.jpg" alt="Image 3">
+      <img src="scroll jpg/4.jpg" alt="Image 4">
+      <img src="scroll jpg/5.jpg" alt="Image 5">
+      <img src="scroll jpg/6.jpg" alt="Image 6">
+      <img src="scroll jpg/7.jpg" alt="Image 7">
+      <img src="scroll jpg/8.jpg" alt="Image 8">
+      <img src="scroll jpg/9.jpg" alt="Image 9">
+      <img src="scroll jpg/10.jpg" alt="Image 10">
+    </div>
+
+
+
+
+
+
+
+
+  <!-- Main Container -->
+  <div class="container" id="home">
+    <h1>Medicine Recommendation System</h1> 
+    <label for="disease">Select Disease:</label>
+    <select id="disease">
+      <option value="">--Select a Disease--</option>
+      <option value="cold">Common Cold</option>
+      <option value="fever">Fever</option>
+      <option value="headache">Headache</option>
+      <option value="allergy">Allergy</option>
+      <option value="asthma">Asthma</option>
+      <option value="diabetes">Diabetes</option>
+      <option value="hypertension">Hypertension</option>
+      <option value="flu">Flu</option>
+      <option value="migraine">Migraine</option>
+      <option value="cough">Cough</option>
+      <option value="indigestion">Indigestion</option>
+      <option value="arthritis">arthritis</option>
+      <option value="ulcer">ulcer</option>
+      <option value="stroke">stroke</option>
+      <option value="pneumonia">pneumonia</option>
+      <option value="chickenpox">chickenpox</option>
+
+      <option value="tuberculosis">Tuberculosis</option>
+      <option value="meningitis">Meningitis</option>
+      <option value="sepsis">Sepsis</option>
+      <option value="bipolar">Bipolar Disorder</option>
+      <option value="depression">Depression</option>
+      <option value="Eczema">Eczema</option>
+      <option value="scabies">Scabies</option>
+      <option value="ringworm">Ringworm</option>
+      <option value="hepatitis_b">Hepatitis B</option>
+      <option value="diabetes_mellitus">Diabetes Mellitus</option>
+      <option value="hypertension">Hypertension</option>
+    </select>
+
+    <div id="symptoms-container" class="hidden">
+      <h2>Symptoms:</h2>
+      <ul id="symptoms-list"></ul>
+    </div>
+
+    <div id="medicine-container" class="hidden">
+      <h2>Suggested Medicines:</h2>
+      <ul id="medicine-list"></ul>
+    </div>
+  </div>
+
+
+
+
+  <!-- Department -->
+   <div class="container">
+    <h2>Department Suggestion Based on Disease</h2>
+    
+    <!-- Disease Input Form -->
+    <label for="diseaseInput">Enter Disease Name:</label>
+    <input type="text" id="diseaseInput" placeholder="e.g., Parkinson's disease, Cancer">
+
+    <button onclick="suggestDepartment()">Get Department Suggestions</button>
+    
+    <!-- Department Suggestions -->
+    <div id="suggestionsContainer"></div>
+    <script src="script1.js"></script>
+  </div>
+
+
+  <!-- Form Section -->
+  <div class="form-section">
+    <h2>Submit Your Details</h2>
+    <form id="user-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="blood-group">Blood Group:</label>
+      <input type="text" id="blood-group" name="blood-group" required>
+
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+  
+
+  <!-- About Section -->
+  <!-- <div class="about-section" id="about">
+    <h2>About</h2>
+    <p>This project helps users find medicines based on symptoms of common diseases.</p>
+  </div> -->
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <img src="bg1.png" alt="Medical Logo" class="footer-logo">
+        <p>Healthcare Systems.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Phone: +91-8826635011</p>
+        <p>Email: jhadeepakkumar39@gmail.com</p>
+        <p>Address: Faridabad,Haryana </p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Patient Portal</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="social logo/face.jpg" alt="Facebook"></a>
+          <a href="#"><img src="social logo/twi.jpg" alt="Twitter"></a>
+          <a href="#"><img src="social logo/insta.jpg" alt="Instagram"></a>
+          <a href="#"><img src="social logo/linkd.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> Thanks for visiting</p>
+    </div>
+  </footer>
+ 
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+
+
+
+</html>
+
